@@ -1,4 +1,5 @@
 let currencyRatio = {
+    //환율 바꾸기 
     USD:{
         KRW: 1335.61,
         USD:1,

@@ -19,6 +19,7 @@ let currencyRatio = {
     unit: "동",
   },
 };
+
 //console.log(currencyRatio.VND.unit);  //. 이나 []는 같은 방식. mix도 가능
 //console.log(currencyRatio['VND']['unit']);
 let fromCurrency = "USD";

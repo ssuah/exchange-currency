@@ -29,6 +29,7 @@ document.querySelectorAll("#from-currency-list a").forEach((menu) =>
     document.getElementById("from-button").textContent = this.textContent;
     fromCurrency = this.textContent;
     console.log("fromcurrency는", fromCurrency);
+    convert();
   })
 );
 
@@ -37,4 +38,14 @@ document
 .forEach((menu) => menu.addEventListener("click",function () {
     document.getElementById("to-button").textContent = this.textContent;
     toCurrency = this.textContent;
+    convert();
 }));
+
+
+function convert(){
+   let amount =document.getElementById("from-input").value;//값을 읽어오겠다.
+   let convertedAmount = amount * currencyRatio[fromCurrency][toCurrency]
+   console.log("환전결과",convertedAmount);
+
+   document.getElementById("to-input").value=convertedAmount;
+}

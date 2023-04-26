@@ -50,3 +50,25 @@ function convert(){
 
    document.getElementById("to-input").value=convertedAmount;
 }
+//new ES6 
+
+//예전 let name:"이름"
+//     let age =17
+
+//let person = {name:name , age:age}
+
+//ES6 Ver.
+//let person ={ name , age }  //키값과 변수이름 같을때만 가능
+
+//ES6 객체의 경우
+//let girl = {
+//	name:"예쁨"
+//	age:7
+//}
+
+//이전방식
+//let name =girl.name
+//let num= girl.num
+
+//ES6
+//let {name,num} =girl
